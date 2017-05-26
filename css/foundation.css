@@ -1196,7 +1196,8 @@ select {
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #f658da;
+    background-color: #e85061;
+    /*background-color: rgba(246, 88, 106, 0.5 );*/
     color: #fefefe; }
   .button.tiny {
     font-size: 0.6rem; }
@@ -1221,7 +1222,7 @@ select {
     color: #fff; }
     .button.secondary:hover, .button.secondary:focus {
       background-color: #f6586a;
-      color: #0a0a0a; }
+      color: #fff; }
   .button.alert {
     background-color: #c60f13;
     color: #fefefe; }
