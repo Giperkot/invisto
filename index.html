@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="row bottom10">
-        <div class="large-4 medium-4 small-4 columns">
-            <div class="header_left callout">
-                г. Пермь, ул. Лодыгина, 55
-                <a href="#">Посмотреть на карте</a>
+    <div class="header-top wrapper">
+        <div class="row bottom10">
+            <div class="large-4 medium-4 small-4 columns">
+                <div class="header_left callout">
+                    г. Пермь, ул. Лодыгина, 55
+                    <a href="#">Посмотреть на карте</a>
+                </div>
             </div>
-        </div>
-        <div class="large-4 medium-4 small-4 columns">
-            <div class="center">
-                <img class="logotip_image" alt="invisto" src="css/images/logotip.jpg" />
+            <div class="large-4 medium-4 small-4 columns">
+                <div class="center">
+                    <img class="logotip_image" alt="invisto" src="css/images/logotip.jpg" />
+                </div>
             </div>
-        </div>
-        <div class="large-4 medium-4 small-4 columns">
-            <div class="header_left callout">
-                +7 (342) 245 54 55 <br/>
-                <a href="#">Заказать звонок</a>
+            <div class="large-4 medium-4 small-4 columns">
+                <div class="header_left callout">
+                    +7 (342) 245 54 55 <br/>
+                    <a href="#">Заказать звонок</a>
+                </div>
             </div>
         </div>
     </div>
@@ -63,8 +65,25 @@
         </div>
     </div>
     <div class="invisto_slider">
+
         <div class="invisto_slider__left_arrow"></div>
-        <div class="invisto_slider__content">
+        <div class="invisto_slider__content cycle-slideshow"
+             data-cycle-fx="scrollHorz"
+             data-cycle-timeout="10000"
+             data-cycle-slides="> .invisto_slider__slide"
+             data-cycle-pause-on-hover="true"
+             data-cycle-prev=".invisto_slider__left_arrow"
+             data-cycle-next=".invisto_slider__right_arrow">
+            <div class="invisto_slider__slide invisto_slider__slide1">
+                <div class="invisto_slider__inner_contant">
+                    <div class="invisto_slider__text">Акция в марте </div>
+                    <div class="invisto_slider__text">детская ОДЕЖДа </div>
+                    <div class="invisto_slider__text">минус 50% </div>
+                    <div class="invisto_slider__button">
+                        <a class="button" href="#">Подробней</a>
+                    </div>
+                </div>
+            </div>
             <div class="invisto_slider__slide invisto_slider__slide1">
                 <div class="invisto_slider__inner_contant">
                     <div class="invisto_slider__text">Акция в марте </div>
@@ -92,13 +111,13 @@
                 </div>
 
                 <div class="brands_contant">
-                    <h2 class="center">Каталог</h2>
+                    <h2 class="center">КАТАЛОГ</h2>
 
                     <div class="row">
-                        <div class="large-6 medium-6 small-2 columns">
+                        <div class="large-6 medium-6 small-2 columns small_padding">
                             <div class="square_element square_element__element1">
 
-                                <div class="hidden square_element__list center">
+                                <div class="unvisible square_element__list center">
                                     <ul>
                                         <li><a href="#">Одежда</a></li>
                                         <li><a href="#">Бельё</a></li>
@@ -113,14 +132,17 @@
 
                                 <div class="square_element__title_wrapper">
                                     <div class="square_element__title center">
-                                        Женщинам
+                                        Мужчинам
                                     </div>
                                 </div>
                             </div>
 
                             <div class="square_element square_element__element3">
 
-                                <div class="hidden square_element__list center">
+                                <div class="square_element__child_list">
+                                    <div class="square_element__title">
+                                        Детям
+                                    </div>
                                     <ul>
                                         <li><a href="#">Одежда</a></li>
                                         <li><a href="#">Бельё</a></li>
@@ -128,23 +150,14 @@
                                         <li><a href="#">Носки</a></li>
                                         <li><a href="#">Термобельё</a></li>
                                     </ul>
-                                    <div class="square_element__look_all center">
-                                        <a href="#">Смотреть все категории для мужчин</a>
-                                    </div>
-                                </div>
-
-                                <div class="square_element__title_wrapper">
-                                    <div class="square_element__title center">
-                                        Женщинам
-                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="large-6 medium-6 small-2 columns">
+                        <div class="large-6 medium-6 small-2 columns small_padding">
                             <div class="square_element square_element__element2">
 
-                                <div class="hidden square_element__list center">
+                                <div class="unvisible square_element__list center">
                                     <ul>
                                         <li><a href="#">Одежда</a></li>
                                         <li><a href="#">Бельё</a></li>
@@ -166,24 +179,6 @@
 
                             <div class="square_element square_element__element4">
 
-                                <div class="hidden square_element__list center">
-                                    <ul>
-                                        <li><a href="#">Одежда</a></li>
-                                        <li><a href="#">Бельё</a></li>
-                                        <li><a href="#">Домашняя одежда</a></li>
-                                        <li><a href="#">Носки</a></li>
-                                        <li><a href="#">Термобельё</a></li>
-                                    </ul>
-                                    <div class="square_element__look_all">
-                                        <a href="#">Смотреть все категории для мужчин</a>
-                                    </div>
-                                </div>
-
-                                <div class="square_element__title_wrapper">
-                                    <div class="square_element__title center">
-                                        Женщинам
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -240,9 +235,9 @@
                 </div>
 
                 <div class="about_company__text">
-                    Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.
+                    <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.</p>
                     <br/><br/>
-                    В лингвистике термин текст используется в широком значении, включая и образцы устной речи. Восприятие текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение, объективированное в виде письменного документа, состоящее из ряда высказываний, объединённых разными типами лексической, грамматической и логической связи, имеющее определённый моральный характер, прагматическую установку и соответственно литературно обработанное»[1].
+                    <p>В лингвистике термин текст используется в широком значении, включая и образцы устной речи. Восприятие текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение, объективированное в виде письменного документа, состоящее из ряда высказываний, объединённых разными типами лексической, грамматической и логической связи, имеющее определённый моральный характер, прагматическую установку и соответственно литературно обработанное»[1].</p>
                 </div>
             </div>
         </div>
@@ -359,6 +354,8 @@
 
 
 
-
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/cycle2.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

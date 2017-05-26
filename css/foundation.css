@@ -15,32 +15,40 @@
      *    IE on Windows Phone and in iOS.
      */
 @font-face {
-  font-family: Neue Haas Unica W1G Bold;
+  font-family: 'Neue Haas Unica W1G';
   src: url('font/Neue Haas Unica W1G Bold.otf');
+  font-weight: bold;
 }
 @font-face {
-  font-family: Neue Haas Unica W1G Medium;
+  font-family: 'Neue Haas Unica W1G';
   src: url('font/Neue Haas Unica W1G Medium.otf');
+  font-size: medium;
 }
 @font-face {
-  font-family: Neue Haas Unica W1G;
+  font-family: 'Neue Haas Unica W1G';
   src: url('font/Neue Haas Unica W1G.otf');
+  font-weight: normal;
+  font-size: small;
 }
 @font-face {
-  font-family: Roboto-Bold;
+  font-family: 'Roboto';
   src: url('font/Roboto-Bold.ttf');
+  font-weight: bold;
 }
 @font-face {
-  font-family: Roboto-Medium;
+  font-family: 'Roboto';
   src: url('font/Roboto-Medium.ttf');
+  font-size: medium;
 }
 @font-face {
-  font-family: Roboto-Regular;
+  font-family: 'Roboto';
   src: url('font/Roboto-Regular.ttf');
+  font-style: normal;
+  font-size: small;
 }
 
 html {
-  font-family: Neue Haas Unica W1G, sans-serif;
+  font-family: 'Neue Haas Unica W1G', sans-serif;
   /* 1 */
   line-height: 1.15;
   /* 2 */
@@ -618,7 +626,7 @@ h6 {
   h1 {
     font-size: 3rem; }
   h2 {
-    font-size: 2.5rem; }
+    font-size: 1.7rem; }
   h3 {
     font-size: 1.9375rem; }
   h4 {

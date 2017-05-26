@@ -1,3 +1,7 @@
+body, h1, h2, h3, h4, h5 {
+    font-family: 'Neue Haas Unica W1G';
+}
+
 .wrap_row {
     width: 100%;
     background: #8596a6;
@@ -17,25 +21,48 @@
 .header__menu {
     font-size: 15px;
 }
+.header__menu a {
+    text-decoration: none;
+}
 .menu_hover:hover {
     background: #f6586a;
     cursor: pointer;
 }
 
+a {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    font-size: 90%;
+    font-family: 'Roboto';
+}
 .hidden {
     display: none;
 }
-
+.unvisible {
+    visibility: hidden;
+}
+.small_padding {
+    padding-right: 0.4675rem;
+    padding-left: 0.4675rem;
+}
+.header-top {
+    margin: 10px 0;
+    line-height: 110%;
+}
 .header_left {
     color: #404a54;
-    font-weight: bold;
-    font-size: 17px;
+    /*font-weight: bold;*/
+    font-size: 18px;
 }
 .header_left a{
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     color: #404a54;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .invisto_slider {
@@ -52,12 +79,18 @@
     width: 30px;
     height: 100px;
     background: url('images/arrow.png') center center no-repeat rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    z-index: 106;
 }
 .invisto_slider__content {
 
 }
+.cycle-slide {
+    width: 100%;
+}
 .invisto_slider__slide {
     height: 520px;
+    width: 100%;
 }
 .invisto_slider__slide1 {
     background: url('images/slide1.jpg') center center no-repeat;
@@ -90,6 +123,8 @@
     width: 30px;
     height: 100px;
     background: url('images/arrow_right.png') center center no-repeat rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    z-index: 100;
 }
 .invisto_slider__bottom_border {
     position: absolute;
@@ -127,7 +162,7 @@
     background-size: contain;
 }
 .square_element__element2 {
-    background: url('images/square1_bgr.jpg') top center no-repeat #fff;
+    background: url('images/square2_bgr.jpg') top center no-repeat #fff;
     background-size: contain;
 }
 .square_element__element3 {
@@ -138,11 +173,14 @@
     background: url('images/square3_brg.jpg') top center no-repeat #fff;
     background-size: contain;
 }
+
 .square_element:hover .square_element__title_wrapper{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 .square_element:hover .square_element__list{
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 .square_element__list {
     position: absolute;
@@ -152,20 +190,32 @@
     bottom: 20px;
     background: rgba(255, 255, 255, 0.6);
     color: #0e2952;
+    opacity: 0;
+    transition: all 1s;
 }
 .square_element__list ul{
     list-style: none;
     display: inline-block;
-    width: 50%;
+    width: 70%;
 }
 .square_element__list ul li{
     width: 100%;
     text-align: center;
+    padding: 5px 20px;
+}
+.square_element__list ul li:hover{
+    background: #f6586a;
+    color: #fff;
+}
+.square_element__list ul li:hover a{
+    background: #f6586a;
+    color: #fff;
+    text-decoration: none;
 }
 .square_element__list ul li a{
     /*color: #0e2952;*/
-    font-size: 20px;
-    text-decoration: underline;
+    font-size: 18px;
+    /*text-decoration: underline;*/
 }
 
 .square_element__list ul li a:hover .square_element__list ul li{
@@ -176,7 +226,7 @@
     position: absolute;
     font-size: 18px;
     font-weight: bold;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     bottom: 0;
     width: 100%;
 }
@@ -186,12 +236,25 @@
     width: 100%;
     bottom: 10px;
     height: 80px;
+    opacity: 1;
+    transition: all 1s;
 }
 .square_element__title {
     font-size: 20px;
     font-weight: bold;
     padding-top: 20px;
 }
+.square_element__child_list {
+    position: absolute;
+    left: 30%;
+    top: 11%;
+    color: #404a54;
+}
+.square_element__child_list ul{
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+
 .search_bgr {
     background: url('images/search.png') center center no-repeat;
     cursor: pointer;
@@ -211,7 +274,7 @@
 }
 .our_brrands_wrapper__brands_list {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 54px 0 80px 0;
 }
 .our_brrands_wrapper__brands_list img{
     width: 990%;
@@ -224,6 +287,7 @@
 .about_company {
     display: inline-block;
     position: relative;
+    padding-bottom: 103px;
 }
 .about_company__red_smth {
     display: inline-block;
@@ -232,6 +296,8 @@
     background: #f6586a;
 }
 .about_company__text {
+    margin-top: 20px;
+    text-align: justify;
     margin-bottom: 30px;
 }
 .about_company_wave {
@@ -343,6 +409,6 @@
     float: right;
 }
 .footer_bottom__right a{
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
